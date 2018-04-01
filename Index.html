@@ -4,19 +4,22 @@
     <meta charset="utf-8">
     <title>Capston Colmar</title>
     <link rel='stylesheet' type='text/css' href="CSS/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
     <link rel='stylesheet' type='text/css' href="CSS/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Hind+Madurai:400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Madurai:300,400,500,600,700" rel="stylesheet">
+    <link rel="icon" href="capstone_colmar_assets/images/logo.ico" type="image/x-icon">
   </head>
   <body>
 
 <!--- company identity and navigation bar --->
 
-<div class="bar computer">
-    <div class="logo ">
-      <img src="capstone_colmar_assets/images/ic-logo.svg">
+<header class="bar">
+  <div class="computer">
+    <div class="logo">
+      <img src="capstone_colmar_assets/images/ic-logo.svg" alt="Logo"/>
       <span>colmar</span><span>academy</span>
     </div>
-    <nav class="">
+    <nav>
       <ul>
         <li><a href="#">On Campus</a></li>
         <li><a href="#">Online</a></li>
@@ -24,72 +27,71 @@
         <li><a href="#">Sign in</a></li>
       </ul>
     </nav>
-</div>
-<div class="bar mobile"
-  <nav>
+  </div>
+  <nav class="bar mobile">
     <ul>
-      <li><a href="#"><img src="capstone_colmar_assets/images/ic-logo.svg"></a></li>
-      <li><a href="#"><img src="capstone_colmar_assets/images/ic-on-campus.svg"></a></li>
-      <li><a href="#"><img src="capstone_colmar_assets/images/ic-online.svg"></a></li>
-      <li><a href="#"><img src="capstone_colmar_assets/images/ic-login.svg"></a></li>
+      <li><a href="#"><img src="capstone_colmar_assets/images/ic-logo.svg" alt="logo"/></a></li>
+      <li><a href="#"><img src="capstone_colmar_assets/images/ic-on-campus.svg" alt="campus"/></a></li>
+      <li><a href="#"><img src="capstone_colmar_assets/images/ic-online.svg" alt="online"/></a></li>
+      <li><a href="#"><img src="capstone_colmar_assets/images/ic-login.svg" alt="login"/></a></li>
     </ul>
   </nav>
-</div>
+</header>
 
 <!--- lead image/learn something new --->
 
-<div class="banner">
-  <div class="big-card">
-    <img src="capstone_colmar_assets/images/banner.jpg">
+<div class="banner" aria-label="intro, with Latin">
+  <div class="big-card" role="presentation">
+    <img src="capstone_colmar_assets/images/banner.jpg" alt=""/>
   </div>
-  <div class="sidebar">
+  <div class="sidebar" role="presentation">
       <h1>Learn something<br>new everyday</h1>
       <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-      <a href="#"><h4 class="button">Start Here</h4></a>
+      <a href="#"><button>Start Here<i class="fa fa-university"></i></button></a>
   </div>
 </div>
 
 <!--- orientatation, campus, lectures --->
 
 <div class="overview">
-  <div class="big-card computer">
-    <img src="capstone_colmar_assets/images/information-main.jpg">
+  <div class="big-card computer" role="presentation">
+    <img src="capstone_colmar_assets/images/information-main.jpg" alt=""/>
     <h2>It doesn't hurt to keep practicing</h2>
-    <p>"Curabitur vitae libero in ipsum portitor consequat. Alquam et commodo
+    <p aria-label="testimonial">"Curabitur vitae libero in ipsum portitor consequat. Alquam et commodo
       lectus, nec consequat neque. Sed non accumasan urna. Phasellus sed consequat ex. Etiam
       eget magna laoreet, efficitur dolor consequat trisque ligula."</p>
     <br>
-    <h4> Emanuel, Sr Strategist at Hiring.com</h4>
+  <h4 style="font-weight:500"> Emanuel, Sr Strategist at Hiring.com</h4>
   </div>
-  <div class="sidebar">
+  <div class="sidebar" role="presentation">
     <div class="small-card">
-      <div class="small-card-image">
-        <img src="capstone_colmar_assets/images/information-orientation.jpg" class="computer">
-        <img src="capstone_colmar_assets/images/information-orientation-mobile.jpg" class="mobile">
+      <div class="small-card-image" role="presentation">
+        <img src="capstone_colmar_assets/images/information-orientation.jpg" class="computer" alt=""/>
+        <img src="capstone_colmar_assets/images/information-orientation-mobile.jpg" class="mobile" alt=""/>
       </div>
-      <div class="small-card-text">
+      <div class="small-card-text" role="presentation">
         <h3>Orientation date</h3>
         <p>Tue 10/11 & Wed 10/12</p>
         <h4><a href="#">Read more</a></h4>
       </div>
     </div>
-    <div class="small-card">
-      <div class="small-card-image">
-        <img src="capstone_colmar_assets/images/information-campus.jpg" class="computer">
-        <img src="capstone_colmar_assets/images/information-campus-mobile.jpg" class="mobile">
+    <div class="small-card" role="presentation">
+      <div class="small-card-image" role="presentation">
+        <img src="capstone_colmar_assets/images/information-campus.jpg" class="computer" alt=""/>
+        <img src="capstone_colmar_assets/images/information-campus-mobile.jpg" class="mobile" alt=""/>
       </div>
-      <div class="small-card-text">
+      <div class="small-card-text" role="presentation">
         <h3>Our campus</h3>
         <p>Find which campus is close to you</p>
         <h4><a href="#">Read more</a></h4>
       </div>
     </div>
-    <div class="small-card">
-      <div class="small-card-image">
-        <img src="capstone_colmar_assets/images/information-guest-lecture.jpg" class="computer">
-        <img src="capstone_colmar_assets/images/information-guest-lecture-mobile.jpg" class="mobile">
+    <div class="small-card" role="presentation">
+      <div class="small-card-image" role="presentation">
+        <img src="capstone_colmar_assets/images/information-guest-lecture.jpg" class="computer" alt=""/>
+        <img src="capstone_colmar_assets/images/information-guest-lecture-mobile.jpg" class="mobile" alt=""/>
       </div>
-      <div class="small-card-text">
+      <div class="small-card-text" role="presentation">
         <h3>Our guest lecture</h3>
         <p>Join a keynote with Oliver Sacks about music in medical treatment</p>
         <h4><a href="#">Read more</a></h4>
@@ -102,10 +104,10 @@
 
 <div class="majors">
   <h2>Start Learning</h2>
-  <div class="row computer">
-    <div class="course col1">
+  <div class="row computer" role="presentation">
+    <div class="course col1" role="presentation">
       <div class="course-image">
-        <img src="capstone_colmar_assets/images/course-software.jpg">
+        <img src="capstone_colmar_assets/images/course-software.jpg" alt=""/>
       </div>
       <div class="course-text">
         <h4>Software engineering</h4>
@@ -113,9 +115,9 @@
         <h5>Web Development, Mobile Development, iOT, APIs</h5>
       </div>
     </div>
-    <div class="course col2">
+    <div class="course col2" role="presentation">
       <div class="course-image">
-        <img src="capstone_colmar_assets/images/course-computer-art.jpg">
+        <img src="capstone_colmar_assets/images/course-computer-art.jpg" alt=""/>
       </div>
       <div class="course-text">
         <h4>Computer art</h4>
@@ -123,9 +125,9 @@
         <h5>Imagine & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</h5>
       </div>
     </div>
-    <div class="course">
+    <div class="course" role="presentation">
       <div class="course-image">
-        <img src="capstone_colmar_assets/images/course-design.jpg">
+        <img src="capstone_colmar_assets/images/course-design.jpg" alt=""/>
       </div>
       <div class="course-text">
         <h4>Design</h4>
@@ -134,10 +136,10 @@
       </div>
     </div>
   </div>
-  <div class="row computer">
-    <div class="course col1">
+  <div class="row computer" role="presentation">
+    <div class="course col1" role="presentation">
       <div class="course-image">
-        <img src="capstone_colmar_assets/images/course-data.jpg">
+        <img src="capstone_colmar_assets/images/course-data.jpg" alt=""/>
       </div>
       <div class="course-text">
         <h4>Data</h4>
@@ -145,9 +147,9 @@
         <h5>Data Science, Big Science, SQL, Data Visualization</h5>
       </div>
     </div>
-    <div class="course col2">
+    <div class="course col2" role="presentation">
       <div class="course-image">
-        <img src="capstone_colmar_assets/images/course-business.jpg">
+        <img src="capstone_colmar_assets/images/course-business.jpg" alt=""/>
       </div>
       <div class="course-text">
         <h4>Business</h4>
@@ -155,9 +157,9 @@
         <h5>Product Development, Business Development, Startup</h5>
       </div>
     </div>
-    <div class="course">
+    <div class="course" role="presentation">
       <div class="course-image">
-        <img src="capstone_colmar_assets/images/course-marketing.jpg">
+        <img src="capstone_colmar_assets/images/course-marketing.jpg" alt=""/>
       </div>
       <div class="course-text">
         <h4>Marketing</h4>
@@ -168,31 +170,30 @@
   </div>
 </div>
 <div class="majors mobile">
-  <h4>Software engineering</h4>
-  <h4>Computer art</h4>
-  <h4>Design</h4>
-  <h4>Data</h4>
-  <h4>Business</h4>
-  <h4>Marketing</h4>
+  <a href="#"><button>Software engineering</button></a>
+  <a href="#"><button>Computer art</button></a>
+  <a href="#"><button>Design</button></a>
+  <a href="#"><button>Data</button></a>
+  <a href="#"><button>Business</button></a>
+  <a href="#"><button>Marketing</button></a>
 </div>
 
 <!--- thesis exhibits: re-imagin urban (video), design and prototype, now and then --->
 <h2 class="big-head">Thesis Exhibit</h2>
-<div class="thesis">
-  <div class="big-card">
+<div class="thesis" role="presentation">
+  <div class="big-card" role="presentation">
     <video width="100%" height="auto" controls>
-      <source src="capstone_colmar_assets/videos/thesis.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+      <source src="capstone_colmar_assets/videos/thesis.mp4" type="video/mp4" alt="Thesis video production"/>
     </video>
     <h2 class="computer">Reimagining Urban</h2>
     <p class="computer">"Curabitur vitae libero in ipsum portitor consequat. Alquam et commodo
       lectus, nec consequat neque. Sed non accumasan urna. Phasellus sed consequat ex. Etiam
       eget magna laoreet, efficitur dolor consequat trisque ligula."</p>
   </div>
-  <div class="sidebar computer">
+  <div class="sidebar computer" role="presentation">
     <div class="small-card">
       <div class="small-card-image">
-        <img src="capstone_colmar_assets/images/thesis-fisma.jpg">
+        <img src="capstone_colmar_assets/images/thesis-fisma.jpg" alt="Thesis still"/>
       </div>
       <div class="small-card-text">
         <h3>Fisma: Design and Prototype</h3>
@@ -202,7 +203,7 @@
     </div>
     <div class="small-card">
       <div class="small-card-image">
-        <img src="capstone_colmar_assets/images/thesis-now-and-then.jpg">
+        <img src="capstone_colmar_assets/images/thesis-now-and-then.jpg" alt="Thesis still"/>
       </div>
       <div class="small-card-text">
         <h3>Now and Then</h3>
