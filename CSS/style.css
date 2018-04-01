@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("../capstone_colmar_assets/Fonts/Brandon Grotesque/BrandonGrotesque-Regular.otf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("../capstone_colmar_assets/Fonts/Brandon Grotesque/BrandonGrotesque-bold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../capstone_colmar_assets/Fonts/Proxima Nova/Proxima Nova Cond Reg.otf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../capstone_colmar_assets/Fonts/Proxima Nova/Proxima Nova ExCn bold.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../capstone_colmar_assets/Fonts/Proxima Nova/Proxima Nova Black.otf");
+  font-weight: 800;
+}
+
+
+html {
+ font-family: "Hind Madurai", "Helvetica", sans-serif;
+ font-size: 20px;
+ color:  #637383;
+ background-color: #FFFFE6;
+}
+
+body {
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Brandon Grotesque", "Helvetica", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.3rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.3;
+  margin-top: .7rem;
+}
+
+li {
+  font-family: "Brandon Grotesque", "Helvetica", sans-serif;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 24px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  font-family: "Copperplate";
+  text-transform: uppercase;
+}
+
+.logo span:last-child {
+  color: #a8b3bd;
+}
+
+a {
+  text-decoration: none;
+  color: #637383;
+}
+
+a:hover {
+  color: #4aa045;
+}
+
+.bar ul {
+  display: inline-flex;
+}
+
+.bar a {
+  margin-left: 16px;
+}
+
+.mobile {
+  display: none;
+}
+
+.banner, .overview, .majors, .thesis, .small-card {
+  display: flex;
+}
+
+.banner {
+  background-color: #c5ccd3;
+}
+
+.big-card {
+  width: 60%;
+  margin: 32px 24px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  width: 40%;
+}
+
+.button {
+  color: white;
+  background-color: #637383;
+  text-align: center;
+  padding: .4rem;
+}
+
+.button:hover {
+  color: white;
+  background-color: #4aa045;
+}
+
+.banner h4 {
+  margin-top: 2rem;
+}
+
+.small-card-image {
+  width: 35%;
+  margin: 16px;
+}
+
+.banner .sidebar {
+  justify-content: center;
+  margin-top: -16px;
+  width: 25%;
+}
+
+@media only screen and (max-width: 560px) {
+  .banner {flex-direction: column;}
+  .banner .big-card {width: 100%; margin: 0;}
+  .banner .sidebar {width: 100%; margin: 32px 16px;}
+  .bar li {margin: 20px 36px 0 36px;}
+}
+
+.overview .sidebar .small-card:last-child {
+  background-color: #c5ccd3;
+ }
+
+
+.thesis .sidebar .small-card:first-child {
+  background-color: #c5ccd3;
+}
+
+@media only screen and (max-width: 560px) {
+  .overview .sidebar .small-card:last-child {background-color: #FFFFE6;}
+}
+
+.small-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+
+.majors {
+  flex-direction: column;
+  align-items: center;
+  background-color: #c5ccd3;
+  padding: 32px 72px;
+}
+
+.row {
+  display: flex;
+  margin-top: 32px;
+}
+
+.course {
+  width: 33%;
+  background-color: ivory;
+}
+
+.course-text {
+  margin-left: 16px;
+}
+
+.caps {
+  text-transform: uppercase;
+  margin: 8px 0;
+}
+
+.big-head {
+  text-align: center;
+  margin: 32px 0;
+}
+
+.col2 {
+  margin: 0 32px;
+}
+
+.mobile {display: none;}
+
+@media only screen and (max-width: 560px) {
+  .computer {display: none;}
+  .mobile {display: flex; justify-content: center;}
+  .sidebar {width: 100%;}
+  .small-card {flex-direction: column;}
+  .small-card-image {width: 100%; margin: 16px;}
+  .small-card-text {width: 100%; margin: 0 32px 32px 32px;}
+  .majors {background-color: #FFFFE6;}
+  .majors h4 {width: 400px; background-color: #c5ccd3; padding: 16px 0 24px 16px; margin: 8px; text-align: left;}
+  .thesis .big-card {width: 100%;}
+}
